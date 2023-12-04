@@ -1,31 +1,31 @@
-// const ages =[20,21,23,26]
+const ages =[20,21,23,26]
 
-// for(let i=0;i<ages.length;i++){
-//    if(ages[i] %2==0){
-//     console.log(ages[i]);;
-//    }else{
-//     console.log("not an even number ! ")
-//    }
-// }
-// let maxnum=0;
-// for (  let i=1;i<ages.length;i++)
-// {
-//    if(ages[i]>maxnum){
-//     maxnum=ages[i];
-//    }
-// }
+for(let i=0;i<ages.length;i++){
+   if(ages[i] %2==0){
+    console.log(ages[i]);;
+   }else{
+    console.log("not an even number ! ")
+   }
+}
+let maxnum=0;
+for (  let i=1;i<ages.length;i++)
+{
+   if(ages[i]>maxnum){
+    maxnum=ages[i];
+   }
+}
 
-// return maxnum;
+return maxnum;
 
 // this is older method
-// const personarray=["Dev","priya","harkirat"];
-// const genderarray=["male","female","male"];
+const personarray=["Dev","priya","harkirat"];
+const genderarray=["male","female","male"];
 
-// for(let i=0; i<personarray.length;i++){
-//     if(genderarray[i]=="male"){
-//         console.log(personarray[i]);
-//     }
-// }
+for(let i=0; i<personarray.length;i++){
+    if(genderarray[i]=="male"){
+        console.log(personarray[i]);
+    }
+}
 
 // dope method :)
 
