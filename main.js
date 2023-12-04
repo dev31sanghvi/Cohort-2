@@ -1,7 +1,7 @@
-// console.log("dev sanghvi");
-// const a=1;
-// a=2;
-// console.log(a);
+console.log("dev sanghvi");
+const a=1;
+a=2;
+console.log(a);
 
 let firstName ="Dev";
 let age=20;
