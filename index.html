@@ -1,37 +1,54 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerodha</title>
-    <link rel="stylesheet"  rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <div><img src="Zerodha_logo.svg"></div>
-        <div class="rightchild">
-            <div class="new"><a href="#">Signup</a></div>
-            <div class="new"><a href="#">About</a></div>
-            <div class="new"><a href="#">Products</a></div>
-            <div class="new"><a href="#">Pricing</a></div>
-            <div class="new"><a href="#">Support</a></div>
-            <div class="new"><i class="fa-solid fa-bars"></i></div>
 
-        </div>
-    </div>
-    <div class="nav">
-    <div class="image"><img src="landing.png"></div>
-        <div class="head"><p style="font-weight: 548 ; color: #424242;">Invest in everything</b></div>
-        <div class="para"><p >Online platform to invest in stocks, derivatives, mutual funds, and more</p></div>
-        <div  class="btn"><button>Sign up now</button></div>
-    </div>
+    <input oninput="debouncePopulateDiv()" id="firstnumber" type="number1" placeholder="number1"></input>
 
-<div class="Dev">
-<h3>By-Dev Sanghvi</h3>
-</div>
+    <input oninput="populateDiv()" type="number2" id="secondnumber" placeholder="number2"></input>
 
+    <div id="finalsum"></div>
 </body>
+<script>
+    let timeout;
+
+    function debouncePopulateDiv() {
+
+        //delayed the call to populateDiv until ive not been called for 100ms
+        //and ive been called atleast once
+
+
+        clearTimeout(timeout)
+        timeout = setTimeout(function () {
+            populateDiv()
+        }, 1000);
+
+        // setTimeout(function () {
+        //     const timeout = setTimeout(function () {
+
+        //         populateDiv()
+        //     }, 100);
+
+
+        // })
+
+    }
+
+
+    function populateDiv() {
+
+        //debouncing ,throtlling
+        const a = document.getElementById("number1").value;
+        const b = document.getElementById("number2").value;
+
+
+        element.innerHTML = parseInt(a) + parseInt(b);
+    }
+</script>
+
 </html>
